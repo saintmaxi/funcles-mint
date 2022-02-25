@@ -194,7 +194,10 @@ const publicMint = async() => {
             await displayErrorMessage(`Error: Max ${MAX_MINT} mints for public!`)
         }
         else if ((error.message).includes("Invalid value sent!")) {
-            await displayErrorMessage(`Error: Insufficient ETH!`)
+            await displayErrorMessage(`Error: Invalid ETH value!`)
+        }
+        else if ((error.message).includes("insufficient funds")) {
+            await displayErrorMessage(`Error: Insuffient ETH to mint!`)
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
@@ -241,7 +244,10 @@ const whitelistMint = async() => {
             await displayErrorMessage(`Error: You are not on the funlist!`)
         }
         else if ((error.message).includes("Invalid value sent!")) {
-            await displayErrorMessage(`Error: Insufficient ETH!`)
+            await displayErrorMessage(`Error: Invalid ETH value!`)
+        }
+        else if ((error.message).includes("insufficient funds")) {
+            await displayErrorMessage(`Error: Insuffient ETH to mint!`)
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
