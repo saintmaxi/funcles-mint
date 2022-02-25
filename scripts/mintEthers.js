@@ -138,12 +138,12 @@ const checkMintingLive = async() => {
         $("#mint-closed").removeClass("hidden");
     }
     else if (!publicLive && whitelistLive) {
-        $("#claim-button").removeClass("hidden");
+        // $("#claim-button").removeClass("hidden");
         $("#mint-button").addClass("hidden");
         $("#mint-closed").addClass("hidden");
     }
     else {
-        $("#claim-button").removeClass("hidden");
+        // $("#claim-button").removeClass("hidden");
         $("#mint-button").removeClass("hidden");
         $("#mint-closed").addClass("hidden");
     }
