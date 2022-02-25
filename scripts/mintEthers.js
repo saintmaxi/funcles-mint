@@ -14,8 +14,8 @@ const MAX_MINT_WL = 2;
 const MAX_SUPPLY = 3333;
 const priceWei = "85000000000000000";
 const priceEth = .085
-const openseaLink = "";
-const looksrareLink = "";
+const openseaLink = "https://opensea.io/collection/funclesnft";
+const looksrareLink = "https://looksrare.org/collections/0xB218E552De5BEF2BceA73590bFd0f709bB5D523f";
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
