@@ -64,7 +64,6 @@ p {
 
 
 .body {
-	background-color: white;
 	font-family: 'Silly', sans-serif;
 	background-size: auto;
 	background-repeat: repeat;
@@ -384,7 +383,8 @@ h5 {
 	#mobile-account {
 		width:80%;
 		background-color: white;
-		color: black
+		color: black;
+		border-radius: 10px;
 	  }
 
 	#about {
