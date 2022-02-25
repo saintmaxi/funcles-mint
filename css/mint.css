@@ -73,7 +73,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 75%;
+    height: 85%;
 }
 
 #mint {
@@ -160,7 +160,7 @@
     /* start minting styling */
 
     #mint-container {
-        height: initial;
+        height: initial !important;
 	background-color: #58B4D4;
     }
 
