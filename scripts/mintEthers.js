@@ -156,8 +156,12 @@ const checkWhitelistStatus = async() => {
         const _merkleProof = await getMerkleProof();
         const addr = await getAddress();
         const _isWhitelisted = await funcles.isWhitelisted(addr, _merkleProof).catch(err => console.log(err));
-        if (!publicIsLive) {
-            $("#whitelisted").html(_isWhitelisted ? "Congrats, you made the funlist!" : "Sorry, you're not on the funlist. Please wait for our public sale.");
+        $("#whitelisted").html(_isWhitelisted ? "Congrats, you made the funlist!" : publicIsLive ? "" : "Sorry, you're not on the funlist! Please wait for our public sale.");
+        if (_isWhitelisted) {
+            $("#claim-button").removeClass("hidden");
+        }
+        else {
+            $("#claim-button").remove();
         }
         return _isWhitelisted;
     }
@@ -174,7 +178,6 @@ const publicMint = async() => {
             }
 
             const cost = ethers.BigNumber.from(priceWei).mul(numberToMint);
-            console.log(priceWei, numberToMint, cost)
             const gasLimit = await funcles.estimateGas.publicMint(numberToMint, {value: cost})
             const newGasLimit = parseInt((gasLimit * 1.2)).toString();
         
