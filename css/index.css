@@ -50,8 +50,13 @@
     letter-spacing: 5px;
 }
 
-#title img {
-    width: 50%;
+#title-img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+#title-img-2 {
+    width: 60%;
 }
 
 #header {
@@ -143,8 +148,12 @@
         width: 90%;
     }
 
-    #title img {
-        width: 75%;
+    #title-img {
+        width: 20%;
+    }
+
+    #title-img-2 {
+        width: 70%;
     }
 
     #title-section {
@@ -156,6 +165,7 @@
         margin: 0;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
+        padding: 10px;
     }
 
     #socials {
