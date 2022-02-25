@@ -52,6 +52,10 @@
 
 #title-img {
     width: 20%;
+}
+
+#title-img img {
+    /* width: 100%; */
     border-radius: 50%;
 }
 
@@ -100,6 +104,7 @@
 
 #logo-img {
     width: 20%;
+    text-decoration: none;
 }
 
 #logo-img img {
@@ -182,7 +187,7 @@
     }
 
     #logo-img {
-        width: 20%;
+        width: 25%;
     }
 
     #logo-img img {
