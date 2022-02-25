@@ -181,7 +181,7 @@
     
     #max-button {
         min-height: 10vh;
-        min-width: 150px;
+        min-width: 75%;
     }
 
     #mint-button, #mint-n-stake-button, #claim-button {
