@@ -30,3 +30,20 @@ function toggleMenu() {
     el.classList.toggle('expanded')
     el.classList.toggle('collapsed')
  }
+
+var mintVisible = false;
+
+ function toggleMintVisible() {
+    if (mintVisible) {
+        $("#mint-tools").addClass("hidden");
+        $("#mint-buttons").addClass("hidden");
+        $("#tos").removeClass("hidden");
+        mintVisible = false;
+    }
+    else {
+        $("#mint-tools").removeClass("hidden");
+        $("#mint-buttons").removeClass("hidden");
+        $("#tos").addClass("hidden");
+        mintVisible = true;
+    }
+ }

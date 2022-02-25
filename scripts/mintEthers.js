@@ -46,7 +46,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum,"any");
 const signer = provider.getSigner();
 const funcles = new ethers.Contract(funclesAddress, funclesAbi(), signer);
 
-const merkleProofSourceUrl = "https://api.nonfungiblecdn.com/cyberturtles/merkleproofs";
+const merkleProofSourceUrl = "https://api.nonfungiblecdn.com/funcles/merkleproofs";
 
 var whitelistIsLive;
 var publicIsLive;

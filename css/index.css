@@ -142,7 +142,23 @@
     height: 4vw;
 }
 
+#tos {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+}
+
+#tos a {
+    font-weight: bold;
+    color: blue;
+}
+
 @media screen and (max-width: 991px) {
+
+    #tos {
+        font-size: 2vh;
+        line-height: 2vh;
+    }
+
     /* start header-navbar styling */
 
     #top {

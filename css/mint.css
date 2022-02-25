@@ -80,6 +80,12 @@
     margin: 0;
     width: 45%;
    background-color: white;
+   min-height: 30vh;
+}
+
+#tos input {
+    transform: scale(2.5);
+    margin-right: 2vw;
 }
 
 #mint h1 {
@@ -145,6 +151,11 @@
 /* end minting styling */
 
 @media screen and (max-width: 767px) {
+
+    #tos input {
+        transform: scale(2);
+        margin-right: 2vh;
+    }
 
     /* start minting styling */
 

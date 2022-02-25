@@ -89,7 +89,7 @@
    <div id="mint-container" class="section body-section body-1 wf-section">
       <img src="images/example.gif" class="mint-img hide-on-mobile" style="margin-right:2%;">
       <div id="mint" class="container w-container box">
-         <div id="mint-tools">
+         <div id="mint-tools" class="hidden">
             <h1 style="text-align: center;">MINT FUNCLES</h1>
             <div class="modal-info">
                <h2 class="heading">Minted</h2>
@@ -118,10 +118,18 @@
                </div>
             </div>
          </div>
-         <div id="mint-buttons" style="text-align: center;">
+         <div id="mint-buttons" style="text-align: center;"  class="hidden">
             <button id="claim-button" class="button hidden" onclick="whitelistMint()">WL MINT</button>
             <button id="mint-button" class="button hidden" onclick="publicMint()">PUBLIC MINT</button>
          </div>
+         <br>
+         <div id="tos" style="text-align: center;">
+            Please agree to our <a href="https://tos.funcles.io/" target="_blank">TOS</a> before minting.
+         <br>
+         <br>
+
+         <input type="checkbox" id="tosagree" name="tosagree" value="" onchange="toggleMintVisible()"> I Agree
+      </div>
       </div>
       <img src="images/example2.gif" class="mint-img hide-on-mobile" style="margin-left:2%;">
    </div>
